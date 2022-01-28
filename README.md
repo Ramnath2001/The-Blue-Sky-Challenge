@@ -1,12 +1,11 @@
 # The-Blue-Sky-Challenge
 
 <p align="center">
-    BREATHE BLUE
+    **BREATHE BLUE**
 </p>
 
 <p align="center">
-    IEEE Blue Sky Challenge
-
+    **IEEE Blue Sky Challenge**
 </p>
 
 
@@ -15,7 +14,10 @@ As explained in the video, the previous attempts before finalizing on XGBoost Re
 The model is imported and Tuned against a dictionary containing random yet good parameters and after some permutations and combinations, the estimator with the best parameters is shown. This was fed into a loop to predict the 18th day’s readings with the help of fitting the values from 11th to 17th. The predicted values are kept in an array and then we repeat it for the 19th day, by appending 18th’s original readings for the training. This cycle goes on till 24th.
 The values undergo a few mathematical steps, with the formula:
 
-![image](https://user-images.githubusercontent.com/65529555/151517633-3a1b95e2-b977-48d5-9d18-62545cc7c966.png)
+<p align="center">
+    ![image](https://user-images.githubusercontent.com/65529555/151517633-3a1b95e2-b977-48d5-9d18-62545cc7c966.png)
+</p>
+
 
  
 •	At = Actual value
