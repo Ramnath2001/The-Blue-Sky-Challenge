@@ -1,11 +1,11 @@
 # The-Blue-Sky-Challenge
 
 <p align="center">
-    **BREATHE BLUE**
+    BREATHE BLUE
 </p>
 
 <p align="center">
-    **IEEE Blue Sky Challenge**
+    IEEE Blue Sky Challenge
 </p>
 
 
