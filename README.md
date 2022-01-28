@@ -15,7 +15,7 @@ The model is imported and Tuned against a dictionary containing random yet good 
 The values undergo a few mathematical steps, with the formula:
 
 <p align="center">
-    ![image](https://user-images.githubusercontent.com/65529555/151517633-3a1b95e2-b977-48d5-9d18-62545cc7c966.png)
+![image](https://user-images.githubusercontent.com/65529555/151517633-3a1b95e2-b977-48d5-9d18-62545cc7c966.png)
 </p>
 
 
