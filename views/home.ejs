@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BlueSky</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=python&amp;skin=sons-of-obsidian"></script>
+    </head>
+    <body>
+        <div class="container-fluid" style="padding-top: 7%;">
+
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h1 class="fw-light text-white display-4">The Blue Sky Challenge</h1>
+                <h2 class="fw-light text-white" style="margin-bottom: 2rem;">Let’s keep the sky blue and the earth green!</h2>
+                <a href="https://github.com/Ramnath2001/The-Blue-Sky-Challenge" class="btn btn-success btn-xlarge" role="button" aria-pressed="true" target="_blank"><i class="fa fa-github"></i>  Repository Link</a>
+                <h2 class="fw-light text-white" style="margin-bottom: 1rem; margin-top: 2rem;">Results for Sub-theme 2: Blue Sky Below</h2>
+                
+                <div class="container-fluid" style="padding: 0.5% 7.5%;">
+                    <div class="jumbotron" style="background-color: black; padding-top: 3rem; padding-bottom: 3rem;">
+                        <h2 class="rainbow-text">Mean Absolute Precentage Error (MAPE) Results</h2>
+                        <hr style="border-top: 1px solid white ;">
+                        <h4 class="text-white" style="margin-top: 1.5rem;">Average MAPE of CO Concentration: <span style="color: rgb(32, 173, 32);">30.54%</span></h4>
+                        <h4 class="text-white" style="margin-top: 1.5rem;">Average MAPE of Temperature: <span style="color: rgb(32, 173, 32);">19.37%</span></h4>
+                        <h4 class="text-white" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">Improved Average MAPE of Temperature (Seasonal Decomposition): <span style="color: rgb(32, 173, 32);">17.20%</span></h4>
+                    </div>
+                </div>
+
+                <div class="container-fluid" style="padding: 0.5% 7.5%;">
+                    <div class="jumbotron" style="background-color: black; padding-top: 3rem; padding-bottom: 3rem;">
+                        <h2 class="rainbow-text">MAPE Results For Each Day</h2>
+                        <hr style="border-top: 1px solid white ;">
+                        <h4 class="text-white" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">MAPE of CO(GT) </h4>
+                        <ul class="list-group">
+                            <h5 class="list-group-item list-group-item-warning">For Day 18: <span style="color: rgb(32, 173, 32);">33.94%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 19: <span style="color: rgb(32, 173, 32);">23.54%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 20: <span style="color: rgb(32, 173, 32);">38.05%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 21: <span style="color: rgb(32, 173, 32);">42.99%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 22: <span style="color: rgb(32, 173, 32);">21.28%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 23: <span style="color: rgb(32, 173, 32);">33.11%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 24: <span style="color: rgb(32, 173, 32);">20.91%</span></h5>
+                        </ul>
+                        <h4 class="text-white" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">MAPE of T </h4>
+                        <ul class="list-group">
+                            <h5 class="list-group-item list-group-item-warning">For Day 18: <span style="color: rgb(32, 173, 32);">11.81%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 19: <span style="color: rgb(32, 173, 32);">25.20%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 20: <span style="color: rgb(32, 173, 32);">14.26%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 21: <span style="color: rgb(32, 173, 32);">10.91%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 22: <span style="color: rgb(32, 173, 32);">12.65%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 23: <span style="color: rgb(32, 173, 32);">42.05%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 24: <span style="color: rgb(32, 173, 32);">18.72%</span></h5>
+                        </ul>
+                        <h4 class="text-white" style="margin-top: 1.5rem; margin-bottom: 1.5rem;">MAPE of T (Seasonal Decomposition Method) </h4>
+                        <ul class="list-group">
+                            <h5 class="list-group-item list-group-item-warning">For Day 18: <span style="color: rgb(32, 173, 32);">7.49%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 19: <span style="color: rgb(32, 173, 32);">28.61%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 20: <span style="color: rgb(32, 173, 32);">10.25%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 21: <span style="color: rgb(32, 173, 32);">7.59%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 22: <span style="color: rgb(32, 173, 32);">8.63%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 23: <span style="color: rgb(32, 173, 32);">44.01%</span></h5>
+                            <h5 class="list-group-item list-group-item-warning">For Day 24: <span style="color: rgb(32, 173, 32);">13.85%</span></h5>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="container-fluid" style="padding: 0.5% 7.5%;">
+                    <div class="jumbotron" style="background-color: black; padding-top: 3rem; padding-bottom: 3rem;">
+                        <h2 class="rainbow-text">CO(GT) predictions</h2>
+                        <div style="height: 300px; overflow-y: scroll; margin-top: 2rem; margin-bottom: 2rem;" >
+                            <table class="table table-dark table-hover">
+                                <colgroup>
+                                    <col class="bg-primary"></col>
+                                    <col span="3" class="bg-info"></col>
+                                    <col class="bg-success"></col>
+                                    <col class="bg-danger"></col>
+                                </colgroup>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Day</th>
+                                        <th scope="col">Hour</th>
+                                        <th scope="col">CO(GT) Actual</th>
+                                        <th scope="col">CO(GT) Predicted</th>
+                                        <th scope="col">CO(GT) error</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% results.forEach(function(data){ %>
+                                        <tr>
+                                            <th scope="row"><%=data['']%></th>
+                                            <td><%=data.Day%></td>
+                                            <td><%=data.Hours%></td>
+                                            <td><%=data['CO (Actual)']%></td>
+                                            <td><%=data['CO(predicted)']%></td>
+                                            <td><%=data['C (error)']%></td>
+                                        </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+    
+                        <h2 class="rainbow-text" style="margin: 5px">Temperature predictions</h2>
+                        <div style="height: 300px; overflow-y: scroll; margin-top: 2rem; margin-bottom: 2rem;" >
+                            <table class="table table-dark table-hover">
+                                <colgroup>
+                                    <col class="bg-primary"></col>
+                                    <col span="3" class="bg-info"></col>
+                                    <col class="bg-success"></col>
+                                    <col class="bg-danger"></col>
+                                </colgroup>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Day</th>
+                                        <th scope="col">Hour</th>
+                                        <th scope="col">T Actual</th>
+                                        <th scope="col">T Predicted</th>
+                                        <th scope="col">T error</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% results.forEach(function(data){ %>
+                                        <tr>
+                                            <th scope="row"><%=data['']%></th>
+                                            <td><%=data.Day%></td>
+                                            <td><%=data.Hours%></td>
+                                            <td><%=data['T(Actual)']%></td>
+                                            <td><%=data['T(predicted)']%></td>
+                                            <td><%=data['T (error)']%></td>
+                                        </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2 class="rainbow-text" style="margin: 5px;">Temperature predictions (Seasonal Decomposition)</h2>
+                        <div style="height: 300px; overflow-y: scroll; margin-top: 2rem;" >
+                            <table class="table table-dark table-hover">
+                                <colgroup>
+                                    <col class="bg-primary"></col>
+                                    <col span="3" class="bg-info"></col>
+                                    <col class="bg-success"></col>
+                                    <col class="bg-danger"></col>
+                                </colgroup>
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Day</th>
+                                        <th scope="col">Hour</th>
+                                        <th scope="col">T Actual</th>
+                                        <th scope="col">T Predicted</th>
+                                        <th scope="col">T error</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% results.forEach(function(data){ %>
+                                        <tr>
+                                            <th scope="row"><%=data['']%></th>
+                                            <td><%=data.Day%></td>
+                                            <td><%=data.Hours%></td>
+                                            <td><%=data['T(Actual)']%></td>
+                                            <td><%=data['T-Decomposition (predicted)']%></td>
+                                            <td><%=data['T-Decomposition (error)']%></td>
+                                        </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" style="padding: 0.5% 7.5%;">
+                    <div class="jumbotron" style="background-color: black; padding-top: 3rem; padding-bottom: 3rem;">
+                        <h2 class="rainbow-text">Our Code</h2>
+                        <div>
+                            <?prettify linenums=1?>
+                            <pre class="prettyprint" style="color: white; height: 600px; margin-top: 2rem; overflow: scroll;">
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import warnings
+from sklearn import metrics
+import xgboost as xgb
+warnings.filterwarnings("ignore")
+
+#Eliminating the delimiters while importing
+dataset=pd.read_csv('AirQuality.csv', sep=";") 
+df=dataset.copy()
+df.head()
+
+#Trimming the Dataset from 11/03/2004 to 24/03/2004
+df.Date = pd.to_datetime(df.Date, format='%d/%m/%Y')
+df=df[(df.Date >= '2004-03-11' ) & (df.Date < '2004-03-25')]
+
+#Trimming the Dataset to the required columns
+df1=df[['Date','Time','CO(GT)','T']];
+df1.head()
+
+df1['Day']= df1['Date'].dt.day 
+df1['Hour']=df1['Time'].apply(lambda x: int(x.split('.')[0]))
+df1.head()
+
+df1["CO(GT)"]=(df1["CO(GT)"].str.replace(',','.')).astype(float)
+df1["T"]=(df1["T"].str.replace(',','.')).astype(float)
+
+#Backup for future analysis and improvement
+dfs = df1
+
+index = df1[ (df1["CO(GT)"] < 0)].index
+df1.drop(index, inplace=True)
+df1= df1.reset_index(drop=True)
+
+X_1, X_2 = df1[(mask:=df1['Day'] <= 17)].copy(), df1[~mask].copy()
+
+c = X_1.columns.tolist()[2:]
+Train = X_1[c]
+Test = X_2[c]
+
+Train.reset_index(drop=True,inplace=True)
+Test.reset_index(drop=True,inplace=True)
+
+from sklearn.model_selection import RandomizedSearchCV
+from sklearn.multioutput import MultiOutputRegressor
+Regressor=MultiOutputRegressor(xgb.XGBRegressor())
+random_search=RandomizedSearchCV(Regressor,param_distributions=params,n_iter=20,n_jobs=-1,cv=5,verbose=3)
+random_search.fit(x_train,y_train)
+print(random_search.best_estimator_)
+
+UV = x_test['Day'].unique()
+temp = 0;
+result =[]
+f=0;
+for i in UV:
+    model1 = MultiOutputRegressor(xgb.XGBRegressor(base_score=None, booster=None,
+                                            colsample_bylevel=None,
+                                            colsample_bynode=None,
+                                            colsample_bytree=0.7,
+                                            enable_categorical=False, gamma=0.3,
+                                            gpu_id=None, importance_type=None,
+                                            interaction_constraints=None,
+                                            learning_rate=0.3,
+                                            max_delta_step=None, max_depth=10,
+                                            min_child_weight=1,
+                                            monotone_constraints=None,
+                                            n_estimators=100, n_jobs=None,
+                                            num_parallel_tree=None,
+                                            predictor=None, random_state=None,
+                                            reg_alpha=None, reg_lambda=None,
+                                            scale_pos_weight=None,
+                                            subsample=None, tree_method=None,
+                                            validate_parameters=None,
+                                            verbosity=None))
+    model1.fit(x_train,y_train)
+    testx = x_test[x_test["Day"] == i]
+    testy = y_test[temp:temp+len(testx)]
+    test1 = testx.to_numpy()
+    x_train = x_train.append(testx, ignore_index=True)
+    y_train = y_train.append(testy, ignore_index=True)
+    resultx = model1.predict(test1)
+    result.append(resultx)
+    temp += len(testx)
+    print('\nPredicted array of values of the %dth day\n' %(18+f), result[f])
+    f=f+1;
+
+MAPEt=[]
+MAPEc=[]
+predicted_c = []
+predicted_t = []
+y_array = y_test.to_numpy()
+temp=0
+for j in result:
+    for i in j:
+        predicted_c.append(i[0])
+        predicted_t.append(i[1])
+    test2 = y_array[temp:temp+len(j)]
+    error = abs((test2-j)/test2)
+    cerror = error.mean(axis = 0)
+    MAPEc.append(cerror[0])
+    MAPEt.append(cerror[1])
+    temp += len(j)
+
+for i in range(0,len(MAPEc)):
+    print("MAPE of CO Conc. in %dth day: %s" % ((i+18),MAPEc[i]))
+
+for i in range(0,len(MAPEt)):
+    print("MAPE of T in %dth day: %s" % ((i+18),MAPEt[i]))
+
+print('Average MAPE of CO Concentration', np.mean(MAPEc))
+
+print('Average MAPE of T Concentration', np.mean(MAPEt))
+
+df2 = Test;
+first_column = df2.pop('Day')
+second_column = df2.pop('Hour')  
+df2.insert(0, 'Day', first_column)
+df2.insert(1, 'Hour', second_column)
+pd.set_option('display.colheader_justify', 'center')
+
+df2['CO(GT) Predicted'] = predicted_c
+df2['T Predicted'] = predicted_t
+df2['CO(GT) Error'] = (df2['CO(GT) Predicted']-df2['CO(GT)'])
+df2['T Error'] = (df2['T Predicted']-df2['T'])
+
+fig = plt.figure(figsize=(15, 10))
+for i in range(0,7):
+    ax = fig.add_subplot(3,3,i+1)
+    df2[df2['Day']==18+i].plot('Hour',['CO(GT) Predicted','CO(GT)'],ax=ax)
+    plt.title('%dth March 2004' % (18+i))
+    plt.tight_layout()
+
+fig = plt.figure(figsize=(15, 10))
+for i in range(0,7):
+    ax = fig.add_subplot(3,3,i+1)
+    df2[df2['Day']==18+i].plot('Hour',['T Predicted','T'],ax=ax)
+    plt.title('%dth March 2004' % (18+i))
+    plt.tight_layout()
+
+#Decomposition of variations in Temperature
+
+dfs['Date']=dfs['Date'].astype(str)
+dfs.loc[:,'Date'] = pd.to_datetime(df.Date.astype(str)+' '+dfs.Time.astype(str),format='%Y-%m-%d %H.%M.%S')
+dfs1 = dfs
+dfs.index = dfs.Date
+dfs=dfs[['T']]
+dfs.head()
+
+#Performing Seasonal-Decomposition
+from statsmodels.tsa.seasonal import seasonal_decompose
+decompose_data = seasonal_decompose(dfs['T'],period=24,extrapolate_trend=1)
+fig, (ax0,ax1,ax2,ax3) = plt.subplots(4,1, figsize=(15,8), sharex=True)
+ax1.set_ylabel('Trend')
+ax2.set_ylabel('Residual')
+ax3.set_ylabel('Seasonality')
+ax0.set_ylabel('Observed')
+decompose_data.observed.plot(ax=ax0,linewidth=2.5)
+decompose_data.trend.plot(ax=ax1)
+decompose_data.resid.plot(ax=ax2)
+decompose_data.seasonal.plot(ax=ax3)
+plt.tight_layout()
+
+y = decompose_data.trend+decompose_data.resid+decompose_data.seasonal
+ax = dfs['T'].plot()
+y.plot(ax=ax)
+
+dfs1['Trend'] = decompose_data.trend;
+dfs1['Residual'] = decompose_data.resid;
+dfs1['Seasonality'] = decompose_data.seasonal;
+dfs1['Temperature'] = dfs1[['T']]
+dfs1= dfs1.reset_index(drop=True)
+
+X_1, X_2 = dfs1[(mask:=df1['Day'] <= 17)].copy(), dfs1[~mask].copy()
+c = X_1.columns.tolist()[4:]
+Train = X_1[c]
+Test = X_2[c]
+
+x_train = Train[['Day','Hour']]
+x_test =  Test[['Day','Hour']]
+
+y_test =  Test[['Trend','Residual','Seasonality']]
+y_train = Train[['Trend','Residual','Seasonality']]
+
+import xgboost as xgb
+from sklearn.multioutput import MultiOutputRegressor
+UV = x_test['Day'].unique()
+temp = 0;
+result =[]
+
+for i in UV:
+    model1 = MultiOutputRegressor(xgb.XGBRegressor()) 
+    model1.fit(x_train,y_train)
+    testx = x_test[x_test["Day"] == i]
+    testy = y_test[temp:temp+len(testx)]
+    test1 = testx.to_numpy()
+    x_train = x_train.append(testx, ignore_index=True)
+    y_train = y_train.append(testy, ignore_index=True)
+    resultx = model1.predict(test1)
+    result.append(resultx)
+    temp += len(testx)
+    
+print(result[0])
+
+t_predicted =[]
+r_predicted =[]
+s_predicted =[]
+y_predicted =[]
+for j in result:
+    for i in j:
+        t_predicted.append(i[0])
+        r_predicted.append(i[1])
+        s_predicted.append(i[2])
+        y_predicted.append(i[0]+i[1]+i[2])
+
+dfs2 = Test;
+dfs2['Trend(Predicted)'] = t_predicted
+dfs2['Residual(Predicted)'] = r_predicted
+dfs2['Seasonality(Predicted)'] = s_predicted
+dfs2['Temperature(New)'] = y_predicted
+dfs2['Error(New)'] = dfs2['Temperature(New)']-dfs2['Temperature']
+dfs2.head()
+
+fig = plt.figure(figsize=(15, 10))
+for i in range(0,7):
+    ax = fig.add_subplot(3,3,i+1)
+    dfs2[dfs2['Day']==18+i].plot('Hour',['Trend(Predicted)','Trend'],ax=ax)
+    plt.title('%dth March 2004' % (18+i))
+    plt.tight_layout()
+
+    
+fig = plt.figure(figsize=(15, 10))
+for i in range(0,7):
+    ax = fig.add_subplot(3,3,i+1)
+    dfs2[dfs2['Day']==18+i].plot('Hour',['Residual(Predicted)','Residual'],ax=ax)
+    plt.title('%dth March 2004' % (18+i))
+    plt.tight_layout()
+    
+    
+fig = plt.figure(figsize=(15, 10))
+for i in range(0,7):
+    ax = fig.add_subplot(3,3,i+1)
+    dfs2[dfs2['Day']==18+i].plot('Hour',['Seasonality(Predicted)','Seasonality'],ax=ax)
+    plt.title('%dth March 2004' % (18+i))
+    plt.tight_layout()
+
+#MAPE CALCULATION
+MAPE_DT=[]
+for i in range(18,25):
+    dfx=dfs2['Temperature'].loc[(dfs2['Day'] == i)]
+    dfy=abs(dfs2['Error(New)'].loc[(dfs2['Day'] == i)])
+    dfz=dfy.div(dfx);
+    MAPE_DT.append(dfz.mean())
+
+for i in range(0,len(MAPE_DT)):
+    print("MAPE of T in %dth day: %s" % ((i+18),MAPE_DT[i]))
+
+print('Average MAPE of T Concentration', np.mean(MAPE_DT))
+
+#Presentation of Final Results
+index = dfs1[ (dfs1["CO(GT)"] < 0)].index
+dfs2.drop(index, inplace=True)
+dfs2= dfs2.reset_index(drop=True)
+
+df2 = df2[["Day","Hour","CO(GT)","CO(GT) Predicted","CO(GT) Error","T","T Predicted","T Error"]]
+df2.round({"CO(GT)":1, "T":1})
+df2['T_New Predicted'] = dfs2['Temperature(New)']
+df2['T_New Error'] = dfs2['Error(New)']
+
+def highlight_cols(x):
+    df = x.copy()
+    df.loc[:, :] = 'background-color: white'
+    df[["CO(GT) Predicted","CO(GT) Error"]] = 'background-color: #b4d2fd'
+    df[["CO(GT)"]] = 'background-color: #26b5d9'
+    df[["T"]] = 'background-color: #00ffbb'
+    df[["T Predicted","T Error"]] = 'background-color: #15f50a'
+    df[["T_New Predicted","T_New Error"]] = 'background-color: #a0ff00'
+    return df 
+  
+print("Highlighted DataFrame :")
+display(df2.style.apply(highlight_cols, axis = None))
+
+#Final Results
+#Average MAPE of CO Concentration: 30.54693881578768 %
+#Average MAPE of Temperature: 19.37107919813272 %
+#Improved average MAPE of Temperature: 17.20470373352059 %
+
+
+                                
+                            </pre>
+                        </div>
+                        
+                    </div>
+            
+                </div>
+                
+                
+            </div>
+            
+        </div>
+        
+        
+    </body>
+</html>
