@@ -1,8 +1,14 @@
 # The-Blue-Sky-Challenge
 
-<center> BREATHE BLUE </center>
+<p align="center">
+    BREATHE BLUE
+</p>
 
-IEEE Blue Sky Challenge
+<p align="center">
+    IEEE Blue Sky Challenge
+
+</p>
+
 
 Our goal is to predict the immediate day’s Temperature and concentration of Carbon monoxide, with the help of its previous week. Once it’s predicted and the day passes off, the real-time values from sensors are recorded and appended to the Training dataset and this continues every day.
 As explained in the video, the previous attempts before finalizing on XGBoost Regressor had various impacts. Some gave a low MAPE for one parameter but not for the other whereas some failed in both. We start with importing the Data and cleaning it. We found a few outliers as well as negative values for concentration, which was impractical and had to drop them. Then we split the data into Training and testing data frames and further breaking them into the Independent/Target value (T or CO) and dependent values.
