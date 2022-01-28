@@ -28,6 +28,9 @@ While adding all these 3 components and plotting on the same graph of Temperatur
 We tried applying the same for CO(GT) and it reaped only a negligible difference. With all of these values side by, we can conclude that this time series had: A small dataset. A massive shift in readings, which too occurred in the Testing, was a primary reason for XGB’s poor prediction on the trend. Hope you loved our perspective of solving this problem. Thank You.
 
 BREATH BLUE
+
 Rohit Ram A
+
 Ramnath K
+
 Sam DJ
