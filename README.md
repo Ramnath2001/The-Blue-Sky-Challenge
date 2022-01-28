@@ -1,6 +1,7 @@
 # The-Blue-Sky-Challenge
 
-BREATHE BLUE
+<center> BREATHE BLUE </center>
+
 IEEE Blue Sky Challenge
 
 Our goal is to predict the immediate day’s Temperature and concentration of Carbon monoxide, with the help of its previous week. Once it’s predicted and the day passes off, the real-time values from sensors are recorded and appended to the Training dataset and this continues every day.
